@@ -2,6 +2,9 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 28
+    aaptOptions {
+        cruncherEnabled false
+    }//追加
 
 
     defaultConfig {
@@ -10,6 +13,7 @@ android {
         targetSdkVersion 28
         versionCode 1
         versionName "1.0"
+        resConfigs "ja", "xxhdpi"//追加
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
